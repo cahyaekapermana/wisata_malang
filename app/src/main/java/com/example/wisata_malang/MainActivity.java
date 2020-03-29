@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleMasuk(View view) {
-        
-        Intent intent = new Intent(this, MainActivity.class);
+
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 }
