@@ -8,12 +8,62 @@
 
     <ImageView
         android:id="@+id/bg"
-        android:layout_width="397dp"
-        android:layout_height="645dp"
+        android:layout_width="421dp"
+        android:layout_height="517dp"
+        android:layout_marginTop="2dp"
         android:background="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="204dp"
+        android:layout_height="65dp"
+        android:background="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+    <ImageView
+        android:layout_width="139dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/author"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="167dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/btn_masuk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg" />
+
+    <Button
+        android:id="@+id/btn_keluar"
+        android:layout_width="167dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_keluar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg" />
+
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="134dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/shape_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
