@@ -66,9 +66,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View view) {
 
-                Log.d(TAG, "onClick: clicked on: " + mImageNames.get(position));
-
                 //Get Text notif dari list
+                //Jadi jika di klik akan keluar hint kecil
+                Log.d(TAG, "onClick: clicked on: " + mImageNames.get(position));
                 //Title
                 Toast.makeText(mContext, mImageNames.get(position), Toast.LENGTH_SHORT).show();
 
