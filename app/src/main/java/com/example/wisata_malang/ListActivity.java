@@ -33,11 +33,11 @@ public class ListActivity extends AppCompatActivity {
 
         mImageUrls.add("https://asset.kompas.com/crops/8cSkHWrzRNdjGca-1kewn2rKfS8=/0x0:1000x667/750x500/data/photo/2020/01/22/5e281e5ad3845.jpg");
         mNames.add("Kampung Warna-warni Jodipan");
-        mImageDescs.add("Ini blablabla");
+        mImageDescs.add("Bagi kamu yang suka berburu foto keren di destinasi wisata kekinian pasti tidak asing dengan Kampung Warna Warni Jodipan yang ada di Malang. Kampung yang berada di Kelurahan Jodipan, Kecamatan Blimbing, Kota Malang, Jawa Timur ini merupakan salah satu kampung warna warni paling hits di Indonesia.");
 
         mImageUrls.add("https://asset.kompas.com/crops/BYPIXxKrHpk84zR99Y6YQoKHHcM=/0x0:1000x667/750x500/data/photo/2020/01/22/5e281e5ab729c.jpg");
         mNames.add("Kampung 3D");
-        mImageDescs.add("Ini sadasdasd");
+        mImageDescs.add("IJalan Tondano, Depok mendadak ramai dikunjungi. Pasalnya di jalanan kecil itu kini telah berhiaskan mural-mural jalanan yang bernuansa 3 dimensi. Kreativitas pemuda karang taruna RW 03, Kelurahan Sukma Jaya, Depok ini membuat jalanan kampung ini menjadi indah dan instagramable. Kini banyak orang yang kini mengunjungi jalanan 3 dimensi ini.");
 
         initRecyclerView();
     }

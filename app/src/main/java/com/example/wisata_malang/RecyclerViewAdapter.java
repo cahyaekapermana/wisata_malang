@@ -33,6 +33,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private Context mContext;
 
     public RecyclerViewAdapter(Context context, ArrayList<String> imageNames, ArrayList<String> images, ArrayList<String> imageDesc ) {
+
         mImagesDesc = imageDesc;
         mImageNames = imageNames;
         mImages = images;
@@ -41,9 +42,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent, false);
         ViewHolder holder = new ViewHolder(view);
         return holder;
+
     }
 
     //Bind Detail List
@@ -62,15 +65,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d(TAG, "onClick: clicked on: " + mImageNames.get(position));
-                Log.d(TAG, "onClick: clicked on: " + mImagesDesc.get(position));
 
-                //Get Text dari list
+                Log.d(TAG, "onClick: clicked on: " + mImageNames.get(position));
+
+                //Get Text notif dari list
                 //Title
                 Toast.makeText(mContext, mImageNames.get(position), Toast.LENGTH_SHORT).show();
-                //Desc
-                Toast.makeText(mContext, mImagesDesc.get(position), Toast.LENGTH_SHORT).show();
-
 
                 Intent intent = new Intent(mContext, DetailListActivity.class);
                 intent.putExtra("image_url", mImages.get(position));
@@ -92,7 +92,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         CircleImageView image;
-        TextView imageName, imageDes;
+        TextView imageName;
+        TextView imageDes;
+
         RelativeLayout parentLayout;
 
         public ViewHolder(View itemView) {
@@ -100,6 +102,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             image = itemView.findViewById(R.id.image);
             imageName = itemView.findViewById(R.id.image_name);
             imageDes = itemView.findViewById(R.id.image_desc);
+
             parentLayout = itemView.findViewById(R.id.parent_layout);
         }
     }

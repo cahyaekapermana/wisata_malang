@@ -14,25 +14,24 @@
         android:src="@mipmap/ic_launcher"/>
 
     <TextView
+        android:id="@+id/image_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/image_description"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="Canada"
-        android:textSize="20sp"
+        android:text="Judul"
         android:textColor="#000"
-        />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/image_description_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/image_description_detail"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:text="Ini Deskripsi"
-        android:textSize="20sp"
         android:textColor="#000"
-        />
+        android:textSize="16sp" />
 
 </LinearLayout>

@@ -33,7 +33,7 @@ public class DetailListActivity extends AppCompatActivity {
             String imageName = getIntent().getStringExtra("image_name");
             String imageDes = getIntent().getStringExtra("image_desc");
 
-
+            //Set variable
             setImage(imageUrl, imageName, imageDes);
         }
     }
