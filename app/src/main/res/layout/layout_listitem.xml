@@ -22,4 +22,17 @@
         android:layout_marginLeft="30dp"
         android:textSize="17sp"/>
 
+    <TextView
+        android:id="@+id/image_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toRightOf="@+id/image"
+        android:visibility = "gone"
+        android:text="Deskripsi"
+        android:textColor="#000"
+        android:textSize="10sp" />
+
 </RelativeLayout>

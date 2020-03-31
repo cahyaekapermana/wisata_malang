@@ -16,6 +16,8 @@ public class ListActivity extends AppCompatActivity {
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
+    private ArrayList<String> mImageDescs = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +33,11 @@ public class ListActivity extends AppCompatActivity {
 
         mImageUrls.add("https://asset.kompas.com/crops/8cSkHWrzRNdjGca-1kewn2rKfS8=/0x0:1000x667/750x500/data/photo/2020/01/22/5e281e5ad3845.jpg");
         mNames.add("Kampung Warna-warni Jodipan");
+        mImageDescs.add("Ini blablabla");
 
         mImageUrls.add("https://asset.kompas.com/crops/BYPIXxKrHpk84zR99Y6YQoKHHcM=/0x0:1000x667/750x500/data/photo/2020/01/22/5e281e5ab729c.jpg");
         mNames.add("Kampung 3D");
+        mImageDescs.add("Ini sadasdasd");
 
         initRecyclerView();
     }
@@ -41,7 +45,7 @@ public class ListActivity extends AppCompatActivity {
     private void initRecyclerView(){
         Log.d(TAG, "initRecyclerView: init recyclerview.");
         RecyclerView recyclerView = findViewById(R.id.recyclerv_view);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mNames, mImageUrls);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mNames, mImageUrls, mImageDescs);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
