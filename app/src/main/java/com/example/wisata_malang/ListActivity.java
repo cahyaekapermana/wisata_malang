@@ -29,34 +29,11 @@ public class ListActivity extends AppCompatActivity {
     private void initImageBitmaps(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
-        mImageUrls.add("https://c1.staticflickr.com/5/4636/25316407448_de5fbf183d_o.jpg");
-        mNames.add("Havasu Falls");
+        mImageUrls.add("https://asset.kompas.com/crops/8cSkHWrzRNdjGca-1kewn2rKfS8=/0x0:1000x667/750x500/data/photo/2020/01/22/5e281e5ad3845.jpg");
+        mNames.add("Kampung Warna-warni Jodipan");
 
-        mImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
-        mNames.add("Trondheim");
-
-        mImageUrls.add("https://i.redd.it/qn7f9oqu7o501.jpg");
-        mNames.add("Portugal");
-
-        mImageUrls.add("https://i.redd.it/j6myfqglup501.jpg");
-        mNames.add("Rocky Mountain National Park");
-
-
-        mImageUrls.add("https://i.redd.it/0h2gm1ix6p501.jpg");
-        mNames.add("Mahahual");
-
-        mImageUrls.add("https://i.redd.it/k98uzl68eh501.jpg");
-        mNames.add("Frozen Lake");
-
-
-        mImageUrls.add("https://i.redd.it/glin0nwndo501.jpg");
-        mNames.add("White Sands Desert");
-
-        mImageUrls.add("https://i.redd.it/obx4zydshg601.jpg");
-        mNames.add("Austrailia");
-
-        mImageUrls.add("https://i.imgur.com/ZcLLrkY.jpg");
-        mNames.add("Washington");
+        mImageUrls.add("https://asset.kompas.com/crops/BYPIXxKrHpk84zR99Y6YQoKHHcM=/0x0:1000x667/750x500/data/photo/2020/01/22/5e281e5ab729c.jpg");
+        mNames.add("Kampung 3D");
 
         initRecyclerView();
     }

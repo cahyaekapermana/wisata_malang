@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetaiListActivity extends AppCompatActivity {
 
-    private static final String TAG = "DetailActivity";
+    private static final String TAG = "DetaiListActivity";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
