@@ -84,7 +84,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public int getItemCount() {
 
-        //Size untuk menghitung jumlah list di listactivity
+        //Size untuk menghitung jumlah gambar list di listactivity
         return mImageNames.size();
     }
 

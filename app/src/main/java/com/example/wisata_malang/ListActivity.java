@@ -39,6 +39,10 @@ public class ListActivity extends AppCompatActivity {
         mNames.add("Kampung 3D");
         mImageDescs.add("IJalan Tondano, Depok mendadak ramai dikunjungi. Pasalnya di jalanan kecil itu kini telah berhiaskan mural-mural jalanan yang bernuansa 3 dimensi. Kreativitas pemuda karang taruna RW 03, Kelurahan Sukma Jaya, Depok ini membuat jalanan kampung ini menjadi indah dan instagramable. Kini banyak orang yang kini mengunjungi jalanan 3 dimensi ini.");
 
+        mImageUrls.add("https://www.javatravel.net/wp-content/uploads/2019/07/Pulau-Sempu.jpg");
+        mNames.add("Pulau Sempu");
+        mImageDescs.add("Tempat wisata yang pertama adalah Pulau Sempu, yang sangat terkenal sebagai surga wisata alam di Kota Malang. Bagi para wisatawan, hukumnya wajib untuk mengunjungi pulau ini. Meski indah, tempat ini memiliki medan yang cukup sulit untuk orang awam. Jika Anda berniat mengunjunginya, sebaiknya Anda menyewa jasa travelling agar lebih terjamin dan mengetahui spot-spot yang bagus.");
+
         initRecyclerView();
     }
 
