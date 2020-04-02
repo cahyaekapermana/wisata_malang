@@ -29,14 +29,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private ArrayList<String> mImageNames;
     private ArrayList<String> mImages;
     private ArrayList<String> mImagesDesc;
+    private ArrayList<String> mImageSource;
+
 
     private Context mContext;
 
-    public RecyclerViewAdapter(Context context, ArrayList<String> imageNames, ArrayList<String> images, ArrayList<String> imageDesc ) {
+    public RecyclerViewAdapter(Context context, ArrayList<String> imageNames, ArrayList<String> images, ArrayList<String> imageDesc, ArrayList<String> imageSource ) {
 
+        mImages = images;
         mImagesDesc = imageDesc;
         mImageNames = imageNames;
-        mImages = images;
+        mImageSource = imageSource;
+
         mContext = context;
     }
 
@@ -61,6 +65,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         holder.imageName.setText(mImageNames.get(position));
         holder.imageDes.setText(mImagesDesc.get(position));
+        holder.imageSources.setText(mImageSource.get(position));
+
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +82,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 intent.putExtra("image_url", mImages.get(position));
                 intent.putExtra("image_name", mImageNames.get(position));
                 intent.putExtra("image_desc", mImagesDesc.get(position));
+                intent.putExtra("image_source", mImageSource.get(position));
+
                 mContext.startActivity(intent);
             }
         });
@@ -94,6 +102,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         CircleImageView image;
         TextView imageName;
         TextView imageDes;
+        TextView imageSources;
 
         RelativeLayout parentLayout;
 
@@ -102,6 +111,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             image = itemView.findViewById(R.id.image);
             imageName = itemView.findViewById(R.id.image_name);
             imageDes = itemView.findViewById(R.id.image_desc);
+            imageSources = itemView.findViewById(R.id.image_source);
 
             parentLayout = itemView.findViewById(R.id.parent_layout);
         }

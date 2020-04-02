@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wisata_malang">
-
     <!-- Untuk Allow Koneksi Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailListActivity"></activity>
+        <activity android:name=".GuideActivity"></activity>
+        <activity android:name=".DetailListActivity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
