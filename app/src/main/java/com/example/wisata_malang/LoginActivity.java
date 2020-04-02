@@ -34,4 +34,11 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(view.getContext(), "Username atau password salah!", Toast.LENGTH_LONG).show();
         }
     }
+
+    public void hanldePetunjuk(View view) {
+
+        Intent intent = new Intent(this, GuideActivity.class);
+        startActivity(intent);
+
+    }
 }
